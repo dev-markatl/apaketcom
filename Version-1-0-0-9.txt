@@ -1,0 +1,14 @@
+-------------------------1.0.0.9------------------------------------
+sunucu üstündeki yükü almak için yükleyici ekranlarında eğer bekleyen sayısı 0 ise bekleyencek butonu pasif olacak
+-------------------------1.0.0.8------------------------------------
+yukleyicci ekranlari buton tıklandıgında sayfa gelinceye kadar buton disabled yapıldı sunucu üstündei yükü azaltmak için.
+robotlistesi yeni robot ekle butonu düzeltildi
+-------------------------1.0.0.7------------------------------------
+ALTER TABLE `paket` ADD `siraNo` INT NULL DEFAULT NULL AFTER `kategoriNo`;
+paket listesi ekranlarına sira no eklendi ve robota bekleyen varmidiye sordugunda kategori no adi ve sırano cevap olarak dönülüyor.
+-------------------------1.0.0.6------------------------------------
+robotun paket listesine kategori adi ve kategori no eklendi
+ALTER TABLE `robot` ADD `yukleyici` INT(1) NOT NULL DEFAULT '0' AFTER `operatorId`;
+ALTER TABLE `robot` ADD `remember_token` TEXT NULL DEFAULT NULL AFTER `updated_at`;
+-------------------------version 1.0.0.5---------
+ALTER TABLE `paket` ADD `kategoriAdi` VARCHAR(200) NULL DEFAULT NULL AFTER `internet`, ADD `kategoriNo` INT NULL DEFAULT NULL AFTER `kategoriAdi`;
